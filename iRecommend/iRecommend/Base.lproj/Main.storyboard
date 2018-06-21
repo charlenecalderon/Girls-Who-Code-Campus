@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Home Screen View Controller" id="BYZ-38-t0r" customClass="ViewController" customModule="iRecommend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMH-8Z-taL">
+                                <rect key="frame" x="20" y="585" width="375" height="39"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="SUGGEST ME A DRINK">
+                                    <color key="titleColor" red="1" green="0.85751113710000004" blue="0.9583929028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="suggestDrinkHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7mi-G3-Ufn"/>
+                                    <segue destination="nbI-Nu-hbK" kind="show" id="dFq-9U-7cp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What should I" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axU-Xx-eNO">
+                                <rect key="frame" x="96" y="132" width="222" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="get from" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPk-wg-0Ws">
+                                <rect key="frame" x="138" y="182" width="138" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STARBUCKS ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYP-Qf-I0w">
+                                <rect key="frame" x="61" y="232" width="293" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="axU-Xx-eNO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="3AG-am-5zB"/>
+                            <constraint firstItem="axU-Xx-eNO" firstAttribute="centerX" secondItem="fMH-8Z-taL" secondAttribute="centerX" id="Bf9-y3-WVO"/>
+                            <constraint firstItem="lYP-Qf-I0w" firstAttribute="top" secondItem="CPk-wg-0Ws" secondAttribute="bottom" constant="8" id="S1K-SI-Lzy"/>
+                            <constraint firstItem="axU-Xx-eNO" firstAttribute="centerX" secondItem="CPk-wg-0Ws" secondAttribute="centerX" id="ZBk-gE-Inx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fMH-8Z-taL" secondAttribute="bottom" constant="112" id="cea-UJ-Kg1"/>
+                            <constraint firstItem="CPk-wg-0Ws" firstAttribute="top" secondItem="axU-Xx-eNO" secondAttribute="bottom" constant="8" id="ekb-Rr-blX"/>
+                            <constraint firstItem="axU-Xx-eNO" firstAttribute="centerX" secondItem="lYP-Qf-I0w" secondAttribute="centerX" id="p1g-iB-xLu"/>
+                            <constraint firstItem="axU-Xx-eNO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vkW-9d-w38"/>
+                            <constraint firstItem="fMH-8Z-taL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zXF-12-heS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="33"/>
+        </scene>
+        <!--Recommendation View Controller-->
+        <scene sceneID="hN4-S3-EjE">
+            <objects>
+                <viewController title="Recommendation View Controller" id="nbI-Nu-hbK" customClass="iRecommendViewController" customModule="iRecommend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gpz-xc-n95">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ili-oZ-Inu">
+                                <rect key="frame" x="20" y="515" width="374" height="39"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="NEW SUGGESTION">
+                                    <color key="titleColor" red="1" green="0.85751113710000004" blue="0.9583929028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newSuggestion:" destination="nbI-Nu-hbK" eventType="touchUpInside" id="yfe-5p-a7i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You should get a ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQC-TZ-UOQ">
+                                <rect key="frame" x="47" y="132" width="321" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYz-Cc-W6X">
+                                <rect key="frame" x="20" y="580" width="374" height="39"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" red="1" green="0.85751113710000004" blue="0.9583929028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="E65-tj-DEh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVI-5B-dx8">
+                                <rect key="frame" x="170" y="255" width="75" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ili-oZ-Inu" firstAttribute="top" secondItem="Iqe-AV-Xyl" secondAttribute="top" constant="495" id="60y-ld-RZb"/>
+                            <constraint firstItem="NYz-Cc-W6X" firstAttribute="leading" secondItem="Iqe-AV-Xyl" secondAttribute="leading" constant="20" id="AWU-37-41l"/>
+                            <constraint firstItem="gVI-5B-dx8" firstAttribute="centerX" secondItem="gpz-xc-n95" secondAttribute="centerX" id="BUq-D3-gqI"/>
+                            <constraint firstItem="NYz-Cc-W6X" firstAttribute="top" secondItem="ili-oZ-Inu" secondAttribute="bottom" constant="26" id="Ga8-JL-fqe"/>
+                            <constraint firstItem="tQC-TZ-UOQ" firstAttribute="top" secondItem="Iqe-AV-Xyl" secondAttribute="top" constant="112" id="J6q-ot-uIS"/>
+                            <constraint firstItem="ili-oZ-Inu" firstAttribute="leading" secondItem="Iqe-AV-Xyl" secondAttribute="leading" constant="20" id="M4I-N8-rWl"/>
+                            <constraint firstItem="NYz-Cc-W6X" firstAttribute="centerX" secondItem="tQC-TZ-UOQ" secondAttribute="centerX" id="adD-P7-fEW"/>
+                            <constraint firstItem="gVI-5B-dx8" firstAttribute="top" secondItem="tQC-TZ-UOQ" secondAttribute="bottom" constant="78" id="cV8-0a-rNe"/>
+                            <constraint firstItem="Iqe-AV-Xyl" firstAttribute="trailing" secondItem="ili-oZ-Inu" secondAttribute="trailing" constant="20" id="cwI-mZ-g4c"/>
+                            <constraint firstItem="NYz-Cc-W6X" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ili-oZ-Inu" secondAttribute="leading" id="cz8-Sh-8J8"/>
+                            <constraint firstItem="NYz-Cc-W6X" firstAttribute="trailing" secondItem="ili-oZ-Inu" secondAttribute="trailing" id="kxz-mL-kjE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iqe-AV-Xyl"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="gVI-5B-dx8" id="7II-2n-8gh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6QK-EO-ztd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845" y="34"/>
+        </scene>
+    </scenes>
+</document>
