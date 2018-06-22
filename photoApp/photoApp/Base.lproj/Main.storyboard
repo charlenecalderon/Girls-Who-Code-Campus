@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Take Photo View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Take Photo View Controller" id="BYZ-38-t0r" customClass="ViewController" customModule="photoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KiV-D9-d54">
+                                <rect key="frame" x="20" y="54" width="374" height="639.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Char's Picture App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCE-Ja-Oc5">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="27.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NN4-lP-dxz">
+                                        <rect key="frame" x="0.0" y="27.666666666666686" width="374" height="367"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="367" id="Ssh-kK-IrH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4G7-8m-3b7">
+                                        <rect key="frame" x="0.0" y="394.66666666666669" width="374" height="49"/>
+                                        <color key="backgroundColor" red="0.94509803921568625" green="0.70196078431372544" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal" title="TAKE PHOTO">
+                                            <color key="titleColor" red="0.97671825109999999" green="1" blue="0.96320280290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yhV-Lt-1yI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU9-ff-Hx3">
+                                        <rect key="frame" x="0.0" y="443.66666666666669" width="374" height="49"/>
+                                        <color key="backgroundColor" red="0.74901960784313726" green="0.70588235294117652" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal" title="SAVE PHOTO">
+                                            <color key="titleColor" red="0.97671825109999999" green="1" blue="0.96320280290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="savePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXU-yW-yqy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHi-Mq-vkw">
+                                        <rect key="frame" x="0.0" y="492.66666666666663" width="374" height="49"/>
+                                        <color key="backgroundColor" red="0.54509803921568623" green="0.63137254901960782" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal" title="GO TO GALLERY ">
+                                            <color key="titleColor" red="0.97671825109999999" green="1" blue="0.96320280290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="c6b-GN-oyA" kind="show" id="R6v-Pp-c3x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK7-mJ-EaZ">
+                                        <rect key="frame" x="0.0" y="541.66666666666663" width="374" height="49"/>
+                                        <color key="backgroundColor" red="0.89411764705882357" green="0.78823529411764703" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal" title="SEPIA FILTER">
+                                            <color key="titleColor" red="0.97612148523330688" green="0.98877424001693726" blue="0.96374779939651489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="filterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FVF-3a-VMv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2m-kf-aMe">
+                                        <rect key="frame" x="0.0" y="590.66666666666663" width="374" height="49"/>
+                                        <color key="backgroundColor" red="0.62352941176470589" green="0.66274509803921566" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal" title="HALFTONE FILTER">
+                                            <color key="titleColor" red="0.97612148523330688" green="0.98877424001693726" blue="0.96374779939651489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="halftoneFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7F0-zl-qHc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97612148523330688" green="0.98877424001693726" blue="0.96374779939651489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KiV-D9-d54" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="5ax-q2-7O7"/>
+                            <constraint firstItem="KiV-D9-d54" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TGX-mL-m5C"/>
+                            <constraint firstItem="KiV-D9-d54" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dEq-la-G3G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="NN4-lP-dxz" id="LLC-yY-F6y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="131.25"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="QY9-Hd-0Xo">
+            <objects>
+                <viewController title="Gallery View Controller" id="c6b-GN-oyA" customClass="GalleryViewController" customModule="photoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ofq-Jn-Ign">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D1s-8g-eNI">
+                                <rect key="frame" x="20" y="69" width="374" height="475"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="475" id="nDa-lB-jZL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GALLERY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPz-4p-B1g">
+                                <rect key="frame" x="153.66666666666666" y="33" width="102.99999999999997" height="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7E-lB-kzV">
+                                <rect key="frame" x="20" y="570" width="374" height="111"/>
+                                <color key="backgroundColor" red="1" green="0.5416331674" blue="0.50525057210000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <state key="normal" title="TAKE ANOTHER PICTURE">
+                                    <color key="titleColor" red="0.97671825109999999" green="1" blue="0.96320280290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ojl-F7-g0u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97612148523330688" green="0.98877424001693726" blue="0.96374779939651489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D1s-8g-eNI" firstAttribute="top" secondItem="CPz-4p-B1g" secondAttribute="bottom" constant="8" symbolic="YES" id="0GB-og-vGn"/>
+                            <constraint firstItem="D1s-8g-eNI" firstAttribute="trailing" secondItem="Ofq-Jn-Ign" secondAttribute="trailingMargin" id="3lH-iS-MxD"/>
+                            <constraint firstItem="CPz-4p-B1g" firstAttribute="centerX" secondItem="Ofq-Jn-Ign" secondAttribute="centerX" id="4DX-JR-WMZ"/>
+                            <constraint firstItem="21j-9t-vC9" firstAttribute="bottom" secondItem="c7E-lB-kzV" secondAttribute="bottom" constant="55" id="AxS-vF-WBS"/>
+                            <constraint firstItem="c7E-lB-kzV" firstAttribute="leading" secondItem="D1s-8g-eNI" secondAttribute="leading" id="SU7-Jt-xGf"/>
+                            <constraint firstItem="CPz-4p-B1g" firstAttribute="top" secondItem="21j-9t-vC9" secondAttribute="top" constant="13" id="XW1-3d-yKn"/>
+                            <constraint firstItem="21j-9t-vC9" firstAttribute="trailing" secondItem="c7E-lB-kzV" secondAttribute="trailing" constant="20" id="jzS-aM-dm5"/>
+                            <constraint firstItem="c7E-lB-kzV" firstAttribute="leading" secondItem="21j-9t-vC9" secondAttribute="leading" constant="20" id="mAz-PE-eah"/>
+                            <constraint firstItem="c7E-lB-kzV" firstAttribute="top" secondItem="D1s-8g-eNI" secondAttribute="bottom" constant="26" id="seh-N0-rlL"/>
+                            <constraint firstItem="D1s-8g-eNI" firstAttribute="centerX" secondItem="CPz-4p-B1g" secondAttribute="centerX" constant="2" id="uFo-q2-8LG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="21j-9t-vC9"/>
+                    </view>
+                    <connections>
+                        <outlet property="galleryView" destination="D1s-8g-eNI" id="Pb9-gf-De4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqb-KZ-y3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
